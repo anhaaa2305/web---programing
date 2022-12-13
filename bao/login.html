@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Đăng nhập vào website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./login.css" rel="stylesheet" type="text/css"/>
+    </head>
+        <body>
+            <header>
+                <h1>Đăng Nhập</h1>
+            </header>
+            <main>
+                <form id="login_form" class="form_class" action="login/login-access.php" method="post">
+                    <div class="form_div">
+                        <label>Tài khoản:</label>
+                        <input class="field_class" name="login_txt" type="text" placeholder="Nhập tài khoản của bạn" autofocus>
+                        <label>Mật khẩu:</label>
+                        <input id="pass" class="field_class" name="password_txt" type="password" placeholder="Nhập mật khẩu của bạn">
+                        <button class="submit_class" type="submit" form="login_form" onclick="return validarLogin()">Đăng nhập</button>
+                    </div>
+                    <div class="info_div">
+                        <p><a href="">Quên mật khẩu</a></p>
+                        <p>Bạn chưa có tài khoản? <a href="register/reg-form.php">Hãy đăng ký!</a></p>
+                    </div>
+                </form>
+            </main>
+            <footer>
+                <p>Sản phẩm môn học công nghệ web <a href="#">Nhom_Code&trade;</a></p>
+            </footer>
+        </body>
+</html>
